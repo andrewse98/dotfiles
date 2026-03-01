@@ -1,0 +1,19 @@
+# Set monitors
+
+output eDP-1 {
+  mode 1920x1080@60.049Hz
+  alias $HOME
+}
+
+output HDMI-A-1 {
+  mode 1920x1080@60Hz
+  alias $HDMI
+}
+
+
+# Set profiles
+profile home {
+  output $HOME position 0,0
+  output $HDMI position 1920,0
+}
+

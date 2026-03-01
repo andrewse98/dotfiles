@@ -1,0 +1,219 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 44,
+  "spacing": 3,
+  "margin-top": 3,
+  "margin-left": 8,
+  "margin-right": 8,
+  "margin-bottom": 8,
+  "modules-left": [
+    "sway/workspaces",
+    "sway/mode",
+    "sway/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "backlight",
+    "cpu",
+    "memory",
+    "battery"
+  ],
+  "clock": {
+    "format": " {:%A, %B %d | %H:%M}",
+    "tooltip-format": "<small>{calendar}</small>",
+    "interval": 1
+  },
+  "sway/workspaces": {
+    "format": "{name}",
+    "all-outputs": false
+  },
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>"
+  },
+  "sway/window": {
+    "format": "{}",
+    "max-length": 50
+  },
+  //
+  // System Monitoring
+  //
+  "cpu": {
+    "format": "{usage}% 󰍛",
+    "interval": 1,
+    "min-length": 5,
+    "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ]
+  },
+  "memory": {
+    "interval": 1,
+    "format": "{used:0.1f}G 󰾆",
+    "format-alt": "{percentage}% 󰾆",
+    "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
+    "on-click-right": "wezterm -e btop"
+  },
+  "temperature": {
+    "interval": 10,
+    "hwmon-path": [
+      "/sys/class/hwmon/hwmon1/temp1_input",
+      "/sys/class/thermal/thermal_zone0/temp"
+    ],
+    "critical-threshold": 82,
+    "format": "{temperatureC}°C {icon}",
+    "format-icons": [
+      "󰈸"
+    ]
+  },
+  //
+  // Audio controls
+  //
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} 󰂰 {volume}%",
+    "format-muted": "󰖁",
+    "format-icons": {
+      "headphone": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 1,
+    "on-click-right": "pavucontrol -t 3"
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": ""
+  },
+  //
+  // Backlight controls (brightness)
+  //
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "on-scroll-up": "~/.config/waybar/scripts/brightnessoperation.sh +",
+    "on-scroll-down": "~/.config/waybar/scripts/brightnessoperation.sh -"
+  },
+  //
+  // Network information
+  //
+  "network": {
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰌘",
+    "format-disconnected": "󰌙",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ]
+  },
+  "network#speed": {
+    "interval": 1,
+    "format-wifi": "{bandwidthUpBytes}  {bandwidthDownBytes}",
+    "format-ethernet": "{bandwidthUpBytes}  {bandwidthDownBytes}",
+    "min-length": 24,
+    "max-length": 24
+  },
+  //
+  // Bluetooth information
+  //
+  "bluetooth": {
+    "format-on": "{icon}",
+    "format-off": "{icon}",
+    "format-connected": "{icon} {num_connections}",
+    "format-icons": {
+      "on": "󰂯",
+      "off": "󰂲",
+      "connected": "󰂱"
+    },
+    "on-click-right": "blueman-manager",
+    "tooltip-format-connected": "{device_enumerate}"
+  },
+  //
+  // Battery management
+  //
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": [
+      "󰂎",
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁾",
+      "󰁿",
+      "󰂀",
+      "󰂁",
+      "󰂂",
+      "󰁹"
+    ],
+    "tooltip-format": "{timeTo} {power}w"
+  },
+  // 
+  // Idle management
+  //
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    },
+    "tooltip-format-activated": "Idle Inhibitor Activated",
+    "tooltip-format-deactivated": "Idle Inhibitor Deactivated"
+  },
+  // 
+  // Custom modules
+  //
+  "custom/separator": {
+    "format": "|"
+  },
+  "custom/swaync": {
+    "format": "{} {icon} ",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": ""
+    },
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw"
+  }
+}

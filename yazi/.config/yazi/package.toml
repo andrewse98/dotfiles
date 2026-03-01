@@ -1,0 +1,29 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "68f7d48"
+hash = "36a484acf6a0a0219c543ccb4cee218f"
+
+[[plugin.deps]]
+use = "wylie102/duckdb"
+rev = "3f8c863"
+hash = "87b9233a74325e95011670ed20bbd0d4"
+
+[[plugin.deps]]
+use = "Shallow-Seek/djvu-view"
+rev = "b281c7f"
+hash = "8205db73f10e23dbfe3436e7bec7b8b2"
+
+[[flavor.deps]]
+use = "BennyOe/tokyo-night"
+rev = "8e6296f"
+hash = "d9da921c3bd37ba32ee27a8a7a40461f"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine"
+rev = "8343340"
+hash = "d92db727dc16db9357f0dcda2758170c"
+
+[[flavor.deps]]
+use = "Mintass/rose-pine-moon"
+rev = "aa2d937"
+hash = "f864fd523f0b3c65079d434eb537cdef"
