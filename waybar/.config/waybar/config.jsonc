@@ -40,10 +40,14 @@
       "class<rstudio>": "<span size='larger'></span>",
       "title<nvim>": "",
       "class<(.*).firefox>": "",
-      "class<Zotero>": "𝐙",
-      "class<ONLYOFFICE>": "",
+      "class<(.*).Zotero>": "𝐙",
+      "class<ONLYOFFICE>": "",
+      "class<libreoffice-writer>": "",
+      "class<libreoffice-calc>": "",
       "class<(.*).zathura>": "",
       "class<(.*).zapzap>": "",
+      "class<gimp>": "",
+      "class<(.*).Inkscape>": "",
       "class<Spotify>": ""
     },
     "all-outputs": false

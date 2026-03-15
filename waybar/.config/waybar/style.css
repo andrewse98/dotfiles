@@ -11,7 +11,8 @@
 }
 
 window#waybar {
-  background-color: @base;
+  background-color: alpha(@base, 0.5);
+  border-bottom: 1px solid alpha(@rose, 0.5);
 }
 
 /* Module containers */
@@ -30,7 +31,7 @@ window#waybar {
 #cpu, #memory, #battery {
   margin: 0px;
   padding: 0px 8px;
-  background-color: @base;
+  background-color: transparent;
 }
 
 
@@ -40,13 +41,14 @@ window#waybar {
 #workspaces {
   margin: 0px;
   padding: 0px;
-  background-color: @base;
+  background-color: transparent;
 }
 
 /* Workspace buttons */
 #workspaces button {
   padding: 0px 8px;
   color: @muted;
+  /* border-bottom: 1px solid alpha(@rose, 0.5); */
   /* transition: all 0.2s ease; */
 }
 
