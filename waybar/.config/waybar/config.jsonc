@@ -39,6 +39,7 @@
       "class<(.*).wezterm>": "<span size='larger'></span>",
       "class<rstudio>": "<span size='larger'></span>",
       "title<nvim>": "",
+      "class<obsidian>": "󰎞",
       "class<(.*).firefox>": "",
       "class<(.*).Zotero>": "𝐙",
       "class<ONLYOFFICE>": "",
@@ -156,7 +157,8 @@
       "󰤢",
       "󰤥",
       "󰤨"
-    ]
+    ],
+    "on-click-right": "~/.config/waybar/scripts/rofi-wifi-menu.sh"
   },
   "network#speed": {
     "interval": 1,
