@@ -11,8 +11,8 @@
 }
 
 window#waybar {
-  background-color: alpha(@base, 0.5);
-  border-bottom: 1px solid alpha(@rose, 0.5);
+  background-color: alpha(@base, 0.85);
+  border-bottom: 1px solid alpha(@rose, 0.85);
 }
 
 /* Module containers */
