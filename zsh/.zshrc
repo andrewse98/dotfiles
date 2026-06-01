@@ -8,6 +8,7 @@
 # fi
 
 export GRIM_DEFAULT_DIR="$HOME/Pictures/Screenshots/"
+# export STEAM_DISABLE_SANDBOX=1
 
 ##############################
 # FUNCTIONS
@@ -46,7 +47,7 @@ alias oft='of txt'
 ##############################
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -186,7 +187,7 @@ else
   export EDITOR='nvim'
 fi
  
-. "$HOME/.local/bin/env"
+# . "$HOME/.local/bin/env"
 
 ##############################
 # STARSHIP

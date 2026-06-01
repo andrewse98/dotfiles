@@ -1,6 +1,5 @@
 @import "./themes/rose-pine.css";
 
-
 /* Global */
 * {
   border: none;
@@ -22,18 +21,25 @@ window#waybar {
 .modules-right {
 }
 
-
 /* --- General Modules --- */
 
-#workspaces, #mode, #window,
-#clock, #pulseaudio, #backlight, #idle_inhibitor,
-#network, #bluetooth,
-#cpu, #memory, #battery {
+#workspaces,
+#mode,
+#window,
+#clock,
+#pulseaudio,
+#backlight,
+#keyboard-state,
+#idle_inhibitor,
+#network,
+#bluetooth,
+#cpu,
+#memory,
+#battery {
   margin: 0px;
   padding: 0px 8px;
   background-color: transparent;
 }
-
 
 /* --- Left-side Modules --- */
 
@@ -58,7 +64,6 @@ window#waybar {
   background-color: @rose;
 }
 
-
 /* Sway Modes */
 
 #mode {
@@ -70,20 +75,17 @@ window#waybar {
   color: @foam;
 }
 
-
 /* Sway Window */
 
 #window {
   background-color: transparent;
 }
 
-
 /* --- Center Modules --- */
 
 #clock {
   color: @gold;
 }
-
 
 /* --- Right-side Modules --- */
 

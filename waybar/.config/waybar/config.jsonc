@@ -42,6 +42,7 @@
       "class<obsidian>": "󰎞",
       "class<(.*).firefox>": "",
       "class<(.*).Zotero>": "𝐙",
+      "class<zoom>": "",
       "class<ONLYOFFICE>": "",
       "class<libreoffice-writer>": "",
       "class<libreoffice-calc>": "",
@@ -210,7 +211,7 @@
     ],
     "tooltip-format": "{timeTo} {power}w"
   },
-  // 
+  //
   // Idle management
   //
   "idle_inhibitor": {
@@ -222,7 +223,19 @@
     "tooltip-format-activated": "Idle Inhibitor Activated",
     "tooltip-format-deactivated": "Idle Inhibitor Deactivated"
   },
-  // 
+  //
+  // Keyboard management
+  //
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "locked": "󰪛",
+      "unlocked": ""
+    }
+  },
+  //
   // Custom modules
   //
   "custom/separator": {

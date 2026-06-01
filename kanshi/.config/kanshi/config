@@ -13,7 +13,7 @@ output HDMI-A-1 {
 
 # Set profiles
 profile home {
-  output $HOME position 0,0
-  output $HDMI position 1920,0
+  output $HDMI position 0,0
+  output $HOME position 1920,0
 }
 
