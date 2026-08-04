@@ -129,6 +129,7 @@ keymap = [
 	{ on = [ "g", "c" ],       run = "cd ~/.config",     desc = "Go ~/.config" },
 	{ on = [ "g", "d" ],       run = "cd ~/Downloads",   desc = "Go ~/Downloads" },
 	{ on = [ "g", "p" ],       run = "cd /mnt/projects/",   desc = "Go to projects" },
+	{ on = [ "g", "a" ],       run = "cd /mnt/life-admin/",   desc = "Go to life admin" },
 	{ on = [ "g", "t" ],       run = "cd /mnt/projects/RUG-097-PhD_teaching/",   desc = "Go to teachings" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },
 	{ on = [ "g", "f" ],       run = "follow",           desc = "Follow hovered symlink" },
