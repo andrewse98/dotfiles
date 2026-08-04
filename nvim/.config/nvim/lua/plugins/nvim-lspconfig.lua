@@ -4,4 +4,9 @@ return {
     opts.diagnostics.virtual_text = false
     return opts
   end,
+  opts = {
+    servers = {
+      r_language_server = { mason = false },
+    },
+  },
 }
