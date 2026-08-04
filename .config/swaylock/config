@@ -1,5 +1,5 @@
 # Images
-image=~/.dotfiles/sway/.config/sway/wallpapers/national-gallery-of-art-SDxGWcz1zLA-unsplash.jpg
+image= $HOME/.config/sway/wallpapers/national-gallery-of-art-SDxGWcz1zLA-unsplash.jpg
 scaling=fill
 
 # Background color
