@@ -3,12 +3,13 @@
 ##############################
 
 # Run fastfetch
-# if [[ -f /usr/bin/fastfetch ]]; then
-#   fastfetch
-# fi
+if [[ -f /usr/bin/fastfetch ]]; then
+  fastfetch
+fi
 
 export GRIM_DEFAULT_DIR="$HOME/Pictures/Screenshots/"
-# export STEAM_DISABLE_SANDBOX=1
+export STEAM_DISABLE_SANDBOX=1
+export QT_SCALE_FACTOR_ROUNDING_POLICY="RoundPreferFloor"
 
 ##############################
 # FUNCTIONS
