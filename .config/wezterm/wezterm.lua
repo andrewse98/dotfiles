@@ -14,8 +14,8 @@ end)
 -- config.line_height = 1
 config.font_size = 13
 config.font = wezterm.font_with_fallback({
-	"JetBrains Mono",
 	"JetBrainsMono Nerd Font Mono",
+	"JetBrains Mono",
 	"JetBrainsMono Nerd Font Propo",
 })
 
@@ -23,7 +23,7 @@ config.font = wezterm.font_with_fallback({
 -- config.color_scheme = "tokyonight"
 config.colors = theme.colors()
 config.window_frame = theme.window_frame()
--- config.window_background_opacity = 0.90
+config.window_background_opacity = 0.90
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
 	left = "1cell",
