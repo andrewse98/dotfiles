@@ -1,19 +1,16 @@
-# Set monitors
-
-output eDP-1 {
-  mode 1920x1080@60.049Hz
-  alias $HOME
+# Default profile
+profile default {
+  output eDP-1 mode 1920x1080@60.049Hz
 }
 
-output HDMI-A-1 {
-  mode 1920x1080@60Hz
-  alias $HDMI
+# Office profile
+profile kantoor {
+  output "LG Electronics 22MB37 802NTPC0V960" mode 1920x1080@60Hz position 0,0
+  output eDP-1 mode 1920x1080@60.049Hz position 0,1080
 }
 
-
-# Set profiles
+# Home profile
 profile home {
-  output $HDMI position 0,0
-  output $HOME position 1920,0
+  output HDMI-A-1 mode 1920x1080@60Hz position 0,0
+  output eDP-1 mode 1920x1080@60.049Hz position 1920,0
 }
-
