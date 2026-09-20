@@ -1,4 +1,4 @@
 exclude = [
-  "/home/asetiono/.dotfiles/yazi/.config/yazi/keymap.toml",
-  "/home/asetiono/.dotfiles/yazi/.config/yazi/yazi.toml",
+  "/home/asetiono/.dotfiles/.config/yazi/keymap.toml",
+  "/home/asetiono/.dotfiles/.config/yazi/yazi.toml",
 ]
