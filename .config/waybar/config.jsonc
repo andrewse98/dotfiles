@@ -39,7 +39,7 @@
       "class<(.*).wezterm>": "<span size='larger'></span>",
       "class<rstudio>": "<span size='larger'></span>",
       "title<nvim>": "",
-      "class<obsidian>": "󰎞",
+      "class<(.*).obsidian>": "",
       "class<(.*).firefox>": "",
       "class<(.*).Zotero>": "𝐙",
       "class<zoom>": "",
