@@ -1,2 +1,5 @@
 [flavor]
 dark = "rose-pine-moon"
+
+[app]
+overall = {}
