@@ -170,7 +170,7 @@ prepend_keymap = [
   { on = [ "g", "u" ],  run = "plugin duckdb -ui",    desc = "open with duckdb ui" },
 
   # dragon
-  { on = [ "d", "r" ],  run  = "plugin dragon",       desc = "Drag file(s) with dragon" }
+  { on  = "<C-n>",      run = "shell -- dragon -x -i -T %h", desc = "Drag file(s) with dragon"  }
 ]
 
 [tasks]
