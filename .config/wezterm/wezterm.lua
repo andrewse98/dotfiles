@@ -14,8 +14,8 @@ end)
 -- config.line_height = 1
 config.font_size = 13
 config.font = wezterm.font_with_fallback({
+	"JetBrainsMono Nerd Font",
 	"JetBrainsMono Nerd Font Mono",
-	"JetBrains Mono",
 	"JetBrainsMono Nerd Font Propo",
 })
 
